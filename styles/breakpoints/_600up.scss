@@ -1,0 +1,538 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+
+.c-txt-md {
+  font-size: 1.6rem;
+}
+
+.c-txt-sm {
+  font-size: 1.1rem;
+}
+
+.c-txt-xs {
+  font-size: 0.9rem;
+}
+
+.c-txt-vertical {
+  font-size: 1.3rem;
+}
+
+.view-more {
+  &__link {
+    font-size: 1.5rem;
+  }
+}
+
+.tit {
+  .ja {
+    font-size: 25px;
+  }
+  .en {
+    font-size: 20px;
+  }
+}
+
+//header
+.header {
+  & .sp-navbtn {
+    display: none;
+  }
+
+  & .logo {
+    margin-top: 4vw;
+    width: 150px;
+  }
+
+  & .mobile-container {
+    margin-top: 10px;
+
+    & .mobile-button {
+      top: 42px;
+      right: 45px;
+    }
+  }
+}
+
+//#top
+.p-top {
+  padding: 10vw 0 30vw 0;
+
+  & .bg-cover {
+    bottom: 120px;
+  }
+}
+
+//#message
+.p-message {
+  & .img-txt {
+    font-size: 1.4rem;
+  }
+}
+
+//#about
+.p-about {
+  padding: 20vw 0 0 0;
+  margin-bottom: 10vw;
+
+  &__img {
+    &.left,
+    &.right {
+      height: 370px;
+    }
+
+    &.left {
+      margin-top: 20vw;
+    }
+
+    &.right {
+      margin-top: 0;
+    }
+
+    & img {
+      width: 50%;
+      height: 63%;
+    }
+  }
+
+  .cover-bg {
+    top: 50%;
+  }
+}
+
+//#special
+.p-special {
+  &__img {
+    & img {
+      width: 50%;
+    }
+
+    &.left {
+      margin-top: 10vw;
+      margin-bottom: 3vw;
+    }
+
+    &.right {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//.p-price
+.p-price {
+  padding-top: 50px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 48%;
+  }
+
+  &__right {
+    width: 48%;
+  }
+
+  &__img {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+
+  .p-title {
+    margin-bottom: 10px;
+  }
+
+  .view-sp {
+    display: none;
+  }
+
+  .view-pc {
+    display: block;
+  }
+}
+
+//.p-staff
+.p-staff {
+  padding-bottom: 5vw;
+
+  &__img {
+    width: 50%;
+  }
+
+  &__desc {
+    width: 50%;
+    margin: -25vw 0 0 35vw;
+  }
+
+  & .view-more {
+    margin-top: 0;
+  }
+}
+
+//.p-info
+.p-info {
+  padding: 20vw 0 0 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__img {
+    height: 250px;
+  }
+
+  &__item {
+    width: 45%;
+
+    & span {
+      font-size: 1rem;
+    }
+
+    & p {
+      margin-top: 2vw;
+      font-size: 1rem;
+    }
+
+    & .g-map {
+      margin-top: 2vw;
+    }
+  }
+}
+
+//.p-recruit
+.p-recruit {
+  margin-top: 10vw;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .view-more {
+    margin-top: 0;
+  }
+}
+
+//.p-news
+.p-news {
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__link {
+    padding: 3vw 0;
+  }
+}
+
+//.p-voices
+.p-voices {
+  & ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 48%;
+  }
+
+  & .more-btn {
+    display: block;
+  }
+}
+
+//#footer
+.p-footer {
+  padding: 8vw 0;
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__logo {
+    width: 30%;
+    img {
+      width: 80%;
+      object-fit: contain;
+    }
+  }
+  &__nav {
+    width: 70%;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 50%;
+      }
+    }
+  }
+
+  & .c-logo {
+    margin-top: 15px;
+
+    & img {
+      width: 40%;
+    }
+  }
+
+  & .copyright {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+}
+
+// * * * * ** * * 初めての方へ * * * * * * *
+.c-first,
+.c-price {
+  .c-features {
+    &__desc {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+
+  .c-points {
+    & li {
+      display: flex;
+      justify-content: space-between;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__desc {
+      width: 50%;
+      padding: 0 5vw;
+    }
+  }
+
+  .c-flow {
+    &-item {
+      .c-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    & .item-wrap {
+      width: 48%;
+    }
+
+    & .item-img {
+      width: 48%;
+    }
+  }
+}
+
+// * * * * * * * * * 料金体系 * * * * * *
+.c-price {
+  &__img {
+    height: 200px;
+  }
+}
+
+// * * * * ** * * スタッフ紹介 * * * * * * *
+.c-staff-wrapper {
+  .c-staff {
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 45%;
+    }
+
+    &__desc {
+      width: 50%;
+    }
+  }
+}
+
+// * * * * * * * * * よくあるご質問* * * * * *
+.faq-wrapper {
+  .faq-contents {
+    & .c-container {
+      padding: 0 7vw;
+    }
+
+    & .faq {
+      &__title {
+        text-align: center;
+      }
+
+      & .c-txt-sm {
+        font-size: 16px;
+      }
+
+      & .c-txt-md {
+        font-size: 18px;
+      }
+
+      & dt {
+        &::before {
+          font-size: 28px;
+        }
+
+        & span {
+          &::after {
+            width: 3vw;
+          }
+        }
+      }
+
+      & dd {
+        &::before {
+          font-size: 30px;
+        }
+      }
+    }
+
+    & .nw-topview {
+      margin: 0 -3vw;
+
+      &__inner {
+        margin: 0 -4vw;
+      }
+    }
+
+    .p-footer {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      & .p-open-time {
+        margin: 0;
+
+        &__wrap {
+          width: 90%;
+        }
+
+        &__table {
+          & th:first-child {
+            width: 9.8vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+//* * * * * * * * * * 採用情報 * * * * * * * *
+.c-recruit {
+  .c-container {
+    padding: 0 5vw;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      width: 30%;
+      line-height: 1;
+    }
+
+    .points-title {
+      margin-bottom: 25px;
+
+      & .c-txt-lr {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+
+    .points-desc {
+      & .c-txt-sm {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .contents-recruit {
+    .c-table01 {
+      & tr {
+        & th {
+          vertical-align: top;
+          min-width: 200px;
+        }
+      }
+
+      & .u-view-sp {
+        display: none;
+      }
+    }
+  }
+}
+
+// * * * * * * * * * お知らせ一覧 * * * * * *
+.news-wrapper {
+  padding: 0;
+
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  .c-news {
+    padding: 0;
+
+    &__title {
+      margin: 0 0 5vw 0;
+    }
+
+    &__list {
+      padding-bottom: 0;
+    }
+
+    &__link {
+      padding: 2vw 0;
+    }
+  }
+}
+
+// * * * * * * * * * お知らせ詳細 * * * * * *
+.c-news-sl {
+  &__contents {
+    padding: 10vw 0;
+  }
+
+  .p-footer {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .p-open-time {
+      margin: 0;
+
+      &__wrap {
+        width: 90%;
+      }
+
+      &__table {
+        & th:first-child {
+          width: 9.8vw;
+        }
+      }
+    }
+  }
+}
