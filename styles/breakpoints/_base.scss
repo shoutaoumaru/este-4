@@ -1555,6 +1555,10 @@ a {
       display: block;
     }
   }
+
+  img {
+    object-position: 100% 15%;
+  }
 }
 
 //* * * * * * よくあるご質問 * * * * * * *
@@ -1612,7 +1616,7 @@ a {
           right: 0;
           width: 16px;
           height: 16px;
-          background-image: url(/images/common/icon-arrow-down.png);
+          background-image: url(/images/common/arrow.svg);
           background-position: top center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -1646,7 +1650,32 @@ a {
     }
 
     .more-btn {
+      text-align: center;
       display: block;
+
+      &__link {
+        width: auto;
+
+        .c-txt-sm {
+          position: relative;
+          border-bottom: 1px solid $cBlack;
+          padding-bottom: 5px;
+          padding-right: 25px;
+          &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url(/images/common/arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
     }
   }
 }
