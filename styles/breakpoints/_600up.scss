@@ -4,18 +4,6 @@ Stylesheet: 600px以上のモニタで適用
 
 ******************************************************************/
 
-.c-txt-md {
-  font-size: 1.6rem;
-}
-
-.c-txt-sm {
-  font-size: 1.1rem;
-}
-
-.c-txt-xs {
-  font-size: 0.9rem;
-}
-
 .c-txt-vertical {
   font-size: 1.3rem;
 }
@@ -34,7 +22,16 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 20px;
   }
 }
-
+.c-topview {
+  &__title {
+    & .c-txt-lr {
+      font-size: 30px;
+    }
+    & .c-txt-sm {
+      font-size: 15px;
+    }
+  }
+}
 //header
 .header {
   & .sp-navbtn {
